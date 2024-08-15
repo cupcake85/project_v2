@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/source-sans-pro_5.0.8/ttf/source-sans-pro-cyrillic-400-normal.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +10,18 @@
 }
 
 body {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  /* font-size: 1.8rem; */
+  line-height: 1.4;
+  overflow-x: auto;
+  color: #000;
+  height: 100%;
+  background: #fff;
 }
 
 header {
+  font-family: SourceSansPro;
   display: flex;
   flex-direction: row;
   height: 100px;
@@ -55,8 +67,8 @@ nav ul {
   display: flex;
 }
 nav ul li {
-  padding: 0 5px; /* Adds space around each menu item */
-  margin: 0 10px; /* Optional: Adds additional space between menu items */
+  padding: 0 5px;
+  margin: 0 10px;
 }
 
 .tools {
@@ -92,4 +104,16 @@ nav ul li {
 
 .reserve {
   background-color: #066aab;
+}
+
+section {
+  padding: 80px 0px;
+}
+
+.main {
+  background: #c99999;
+}
+
+.feature {
+  background-color: #ebede8;
 }
