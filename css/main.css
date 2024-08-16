@@ -5,4 +5,7 @@
   align-items: center;
   text-align: center;
   font-size: 18px;
+  background-image: url("https://www.thavornbeachvillage.com/html/images/bg-welcome.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
 }

@@ -1,0 +1,62 @@
+.room-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 45px 35px;
+}
+
+.learn-more-btn {
+  margin-top: 20px;
+  background-color: #8dc7ba;
+  padding: 10px;
+  width: 100px;
+  font-size: 10px;
+  color: white;
+}
+
+.room-slide {
+  overflow: hidden;
+  position: relative;
+  background-size: calc(100vh - 1);
+}
+
+@media only screen and (min-width: 1025px) {
+  .room-container {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: -15px;
+  }
+
+  .room-box {
+    padding: 60px 45px;
+    flex: 0 0 400px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: #f9f9fa;
+    background-image: url("https://www.thavornbeachvillage.com/html/images/bg-front-accom.png");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 100px 40px;
+  }
+  .room-slide img {
+    height: 75vh;
+    min-height: 680px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
