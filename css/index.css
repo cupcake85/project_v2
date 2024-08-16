@@ -113,16 +113,16 @@ nav li:hover {
 }
 
 .reserve {
-  background-color: #066aab;
+  background-color: #638981;
   width: 160px;
 }
 
 .shop:hover {
-  background-color: #53766f;
+  background-color: #77a99e;
 }
 
 .reserve:hover {
-  background-color: #054671;
+  background-color: #496761;
 }
 
 .slideshow-container {
@@ -155,7 +155,7 @@ nav li:hover {
 }
 
 .active,
-.dot::after {
+.dot:hover {
   background-color: #ffffff;
 }
 
