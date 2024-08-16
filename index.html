@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/room.css" />
+    <link rel="stylesheet" href="/css/offers.css" />
     <title>SAii Phi Phi Island Village</title>
     <link
       rel="icon"
@@ -21,100 +27,193 @@
             alt=""
         /></a>
       </div>
-      <div class="menu-list">
-        <nav>
-          <ul>
-            <li>ทราย พีพี ไอส์แลนด์ วิลเลจ</li>
-            <li>โปรโมชัน</li>
-            <li>ห้องพัก</li>
-            <li>แกลลอรี</li>
-            <li>ร้านอาหาร</li>
-            <li>Things to do</li>
-            <li>Events</li>
-            <li>งานแต่งงาน</li>
-            <li>การเดินทาง</li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li style = "color: #8dc7ba; font-weight: bold"></style>Home</li>
+          <li>
+            Offers
+            <i
+              class="bi bi-caret-down-fill"
+              style="font-size: 8px; color: #bfbfbf"
+            ></i>
+          </li>
+          <li>
+            Sleep
+            <i
+              class="bi bi-caret-down-fill"
+              style="font-size: 8px; color: #bfbfbf"
+            ></i>
+          </li>
+          <li>Gallery</li>
+          <li>
+            Treats
+            <i
+              class="bi bi-caret-down-fill"
+              style="font-size: 8px; color: #bfbfbf"
+            ></i>
+          </li>
+          <li>
+            Things to do
+            <i
+              class="bi bi-caret-down-fill"
+              style="font-size: 8px; color: #bfbfbf"
+            ></i>
+          </li>
+          <li>Events</li>
+          <li>Sustainability</li>
+        </ul>
+      </nav>
 
       <div class="tools">
         <div class="shop">Add-On Shop</div>
-        <div class="reserve">สำรองห้องพัก</div>
+        <div class="reserve">Book Now</div>
       </div>
     </header>
 
-    <!-- Banner slide-->
-    <div class="banner-slide"><img src="./image/banner1.jpg" alt="" /></div>
+     <!-- -----------------------------------------Banner Slide--------------------------------------------------- -->
+    <div class="slideshow-container">
+      <div class="mySlides fade" id="mySlides">
+        <img src="/image/banner1.jpg" style="width: 100%" />
+      </div>
 
-    <!-- Main section-->
-    <section>
+      <div class="mySlides fade" id="mySlides">
+        <img src="/image/banner2.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade" id="mySlides">
+        <img src="/image/banner3.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/image/banner4.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/image/banner5.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/image/banner6.jpg" style="width: 100%" />
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+
+    <!-- -----------------------------------------Main--------------------------------------------------- -->
+    <section class="welcom">
       <div class="main">
-        <h5>Welcome to our resort</h5>
-        <h1>SAii Phi Phi Island Village</h1>
+        <h4 style="color: #8dc7ba">Welcome to our resort</h4>
+        <h1 style="margin-bottom: 20px">SAii Phi Phi Island Village</h1>
         <p>
-          SAii Phi Phi Island Village Welcome to our resort Escape to SAii Phi
-          Phi Island Village, a dream-like tropical resort on a private
-          800-metre stretch of pristine white sandy beach lapped by the
-          turquoise waters of the Andaman Sea. This lavish Phi Phi Island resort
-          is set amid 70 acres of coconut palm plantations, in the privacy of
-          Loh Ba Gao Bay on the peaceful northeast coast of beautiful Phi Phi
-          Island. Accommodations include 189 traditional Thai-style bungalows
-          and 12 exclusive Hillside Pool Villas. Each villa has its own private
-          pool overlooking the island’s magnificent scenery. Resort facilities
-          include five restaurants, three bars, a spa, gift shop, recreation
-          centre, 5-Star PADI dive centre, fitness room, two large swimming
-          pools and tennis courts. At the Marine Discovery Centre, experts
-          educate and inspire guests and locals with sustainability efforts
-          including raising baby sharks and clownfish. Having been off-limits to
-          the public for three and a half years to allow for environmental
-          rejuvenation, Maya Bay in Ko Phi Phi National Park has now officially
-          reopened to tourists and, as one of Thailand’s true national
-          treasures, is a must-visit destination.
+          Escape to SAii Phi Phi Island Village, a dream-like tropical resort on a private 800-metre stretch of pristine white sandy beach lapped by the turquoise waters of the Andaman Sea. This lavish Phi Phi Island resort is set amid 70 acres of coconut palm plantations, in the privacy of Loh Ba Gao Bay on the peaceful northeast coast of beautiful Phi Phi Island.
+        </p> <br>
+        <p>
+          Accommodations include 189 traditional Thai-style bungalows and 12 exclusive Hillside Pool Villas. Each villa has its own private pool overlooking the island’s magnificent scenery.
+        </p> <br>
+        <p>
+          Resort facilities include five restaurants, three bars, a spa, gift shop, recreation centre, 5-Star PADI dive centre, fitness room, two large swimming pools and tennis courts. At the Marine Discovery Centre, experts educate and inspire guests and locals with sustainability efforts including raising baby sharks and clownfish.
+        </p> <br>
+        <p>
+          Having been off-limits to the public for three and a half years to allow for environmental rejuvenation, Maya Bay in Ko Phi Phi National Park has now officially reopened to tourists and, as one of Thailand’s true national treasures, is a must-visit destination.
         </p>
       </div>
     </section>
 
-    <!-- Features section-->
-    <section
-      style="background-color: #ebede8; display: flex; justify-content: center"
-    >
-      <div class="feature">
-        <h5>Play, treats, weddings, spa and care</h5>
-        <h1>InSAiider Journey</h1>
-        <div class="slide-feature" style="display: flex">
-          <div class="feature1" style="width: 200px">
-            <img src="/image/feature1.jpg" alt="" width="150px" />
-            <div class="feature-detail">
-              <h5>a</h5>
-              <p>
-                educate and inspire guests and locals with sustainability
-                efforts including raising baby sharks and clownfish. Having been
-                off-limits to the public for three and a half years to allow for
-                environmental rejuvenation, Maya Bay in Ko Phi Phi National Park
-                has now officially reopened to tourists and, as one of
-                Thailand’s true national treasures, is a must-visit destination
-              </p>
-            </div>
-          </div>
-          <div class="feature2" style="width: 200px">
-            <img src="/image/feature1.jpg" alt="" width="150px" />
-            <div class="feature-detail">
-              <h5>a</h5>
-              <p>
-                educate and inspire guests and locals with sustainability
-                efforts including raising baby sharks and clownfish. Having been
-                off-limits to the public for three and a half years to allow for
-                environmental rejuvenation, Maya Bay in Ko Phi Phi National Park
-                has now officially reopened to tourists and, as one of
-                Thailand’s true national treasures, is a must-visit destination
-              </p>
-            </div>
-          </div>
+ <!-- -----------------------------------------Features--------------------------------------------------- -->
+    <section style="background-color: #ebede8">
+      <div class="boxlineof">
+        <div class="line"></div>
+        <div>
+          <h1 class="h1">Play, treats, weddings, spa and care</h1>
+          <h2 class="h2">InSAiider Journey</h2>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="boxlayoutof">
+        <div class="boxsizeof">
+          <img
+            src="/image/feature1.jpg"
+            alt=""
+            class="imgof"
+          />
+          <p class="textof">Play</p>
+          <p class="textof2">
+            The most obvious wonders in life are sometimes hidden right there waiting for you to enjoy. Surround yourself in sights, sounds, tastes, and adventure. There’s plenty to see and do.
+          </p>
+          <p class="moreof">
+            Discover more
+            <img
+              src="https://www.thavornbeachvillage.com/html/images/ri-arrow.svg"
+              alt=""
+              class="iconof"
+            />
+          </p>
+        </div>
+        <div class="boxsizeof">
+          <img
+            src="/image/feature2.jpg"
+            alt=""
+            class="imgof"
+          />
+          <p class="textof">Treats</p>
+          <p class="textof2">
+            SAii treats combine culinary excellence with a choice of unique indulgences offered on eclectic menus that charm the taste buds and make every holiday complete.
+          </p>
+    
+          <p class="moreof">
+            Discover more
+
+            <img
+              src="https://www.thavornbeachvillage.com/html/images/ri-arrow.svg"
+              alt=""
+              class="iconof"
+            />
+          </p>
+        </div>
+        <div class="boxsizeof">
+          <img
+            src="/image/feature3.jpg"
+            alt=""
+            class="imgof"
+          />
+          <p class="textof">Lèn Forest Spa</p>
+          <p class="textof2">
+            Lèn Forest Spa is located on the hillside with Loh Bah Gao panoramic vistas. Come soothe the soul and enchant the sense with our selections of massage service and spa treatments that seek to treat guests according to their mood and frame of mind. Make yourself feel at home and rejuvenate yourself at a leading Phi Phi Island Spa.
+          </p>
+          <p class="moreof">
+            Discover more
+            <img
+              src="https://www.thavornbeachvillage.com/html/images/ri-arrow.svg"
+              alt=""
+              class="iconof"
+            />
+          </p>
         </div>
       </div>
     </section>
+
+ <!-- -----------------------------------------Rooms--------------------------------------------------- -->
     <section>
-      <h1 style="display: flex; justify-content: center">Sleep</h1>
+      <h1 class="h2" style="margin-bottom: 20px;">Sleep</h1>
+      <div class="room-container">
+        <div class="room-slide">
+          <img src="/image/room1.jpg" alt="" height="400px">
+        </div>
+        <div class="room-box">
+          <h4>Bungalows</h4>
+          <p class="room-detail">A rich, wooden facade and traditional thatched roof give our Deluxe Premium Bungalows that authentic tropical beach vibe. Rustic, yet refined, these 59-square-metre spaces are ideal if you’re looking to unwind in style with easy access to the beach and amenities, while the breezy balcony offers ultimate respite from the midday heat.</p>
+          <p>Start from <b>7,750</b> Baht per night</p>
+          <div class="learn-more-btn">LEARN MORE</div>
+        </div>
+      </div>
+
     </section>
 
     <!-- -----------------------------------------offers--------------------------------------------------- -->
@@ -225,5 +324,7 @@
     <section>Things To Do</section>
     <section style="background-color: #8dc7ba">Work with us</section>
     <div style="height: 2000px"></div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
