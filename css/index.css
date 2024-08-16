@@ -21,27 +21,24 @@ body {
 }
 
 header {
-  font-family: SourceSansPro;
   display: flex;
-  flex-direction: row;
-  height: 100px;
+  font-family: "Source Sans Pro";
+  height: 80px;
   z-index: 10;
   position: fixed;
   width: 100%;
   border-width: 0 0 1px 0;
   background-color: #fff;
-  background-image: url(../images/bg-navheader.png);
   background-position: 80% 50%;
-  background-repeat: no-repeat;
-  padding-left: 55px;
-  padding-right: 1;
-  justify-content: space-between;
+  padding-right: 0px;
+  justify-content: space-around;
   box-shadow: 0 0 5px #0002;
 }
 
 .logo {
-  height: 150px;
-  min-width: 150px;
+  margin-left: 45px;
+  height: 120px;
+  min-width: 120px;
   background: #8dc7ba;
   position: relative;
   z-index: 1002;
@@ -52,54 +49,37 @@ header {
 
 .logo img {
   width: 100%;
-  max-width: 130px;
+  max-width: 110px;
   height: auto;
   margin-left: 20px;
 }
 
-.menu-list {
-  display: flex;
-  align-items: center;
-}
-
-nav ul {
-  width: 100%;
-  display: flex;
-}
-nav ul li {
-  padding: 0 5px;
-  margin: 0 5px;
-}
-
 .tools {
-  height: 100%;
+  width: auto;
   display: flex;
   position: relative;
   z-index: 1002;
+  margin-left: auto;
 }
 
 .shop,
 .reserve {
   height: 100%;
-  width: 200px;
+  width: 160px;
   position: relative;
   background-color: #8dc7ba;
-  border-radius: 0;
   font-family: "Source Sans Pro";
-  font-size: 1.7rem;
-  font-weight: 700;
-  line-height: 1.5;
   color: #fff !important;
   cursor: pointer;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 5px;
   margin-right: 0;
-  z-index: 3;
-  /* text-transform: uppercase;
-  overflow: hidden;
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
 }
 
 .reserve {
