@@ -1,6 +1,8 @@
 @import "/css/offers.css";
 @import "/css/glimpse.css";
 @import "/css/reviews.css";
+@import "/css/room.css";
+
 .main {
   /* background: #c99999; */
   padding-left: 25%;
