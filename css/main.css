@@ -9,3 +9,6 @@
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
+@import "/css/offers.css";
+@import "/css/glimpse.css";
+@import "/css/reviews.css";
