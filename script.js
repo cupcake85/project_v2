@@ -48,7 +48,7 @@ function showSlides() {
   setTimeout(showSlides, 7000);
 }
 
-//discover more
+// discover more
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -66,3 +66,24 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+//jQuery
+// function myFunction() {
+//   var dots = $("#dots");
+//   var moreText = $("#more");
+//   var btnText = $("#myBtn");
+
+//   if (dots.is(":visible")) {
+//     dots.hide();
+//     btnText.html(
+//       'Less Details <img src="/image/11112.svg" alt="" class="iconof" />'
+//     );
+//     moreText.slideDown();
+//   } else {
+//     dots.show();
+//     btnText.html(
+//       'More Details <img src="/image/111111.svg" alt="" class="iconof" />'
+//     );
+//     moreText.slideUp();
+//   }
+// }

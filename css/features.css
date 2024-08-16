@@ -1,0 +1,14 @@
+.box-layout-feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  .box-layout-feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

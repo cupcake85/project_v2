@@ -2,9 +2,9 @@
 @import "/css/glimpse.css";
 @import "/css/reviews.css";
 @import "/css/room.css";
+@import "/css/features.css";
 
 .main {
-  /* background: #c99999; */
   padding-left: 25%;
   padding-right: 25%;
   align-items: center;
@@ -16,6 +16,7 @@
 }
 #more {
   display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 h1 {
