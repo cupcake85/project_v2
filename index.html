@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/offers.css" />
@@ -24,12 +28,36 @@
       </div>
       <nav>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>Offers</a></li>
-          <li><a>Sleep</a></li>
+          <li style = "color: #8dc7ba; font-weight: bold"></style>Home</li>
+          <li>
+            Offers
+            <i
+              class="bi bi-caret-down-fill"
+              style="font-size: 8px; color: #bfbfbf"
+            ></i>
+          </li>
+          <li>
+            Sleep
+            <i
+              class="bi bi-caret-down-fill"
+              style="font-size: 8px; color: #bfbfbf"
+            ></i>
+          </li>
           <li>Gallery</li>
-          <li>Treats</li>
-          <li>Things to do</li>
+          <li>
+            Treats
+            <i
+              class="bi bi-caret-down-fill"
+              style="font-size: 8px; color: #bfbfbf"
+            ></i>
+          </li>
+          <li>
+            Things to do
+            <i
+              class="bi bi-caret-down-fill"
+              style="font-size: 8px; color: #bfbfbf"
+            ></i>
+          </li>
           <li>Events</li>
           <li>Sustainability</li>
         </ul>
@@ -42,36 +70,57 @@
     </header>
 
     <!-- Banner slide-->
-    <div class="wrap-banner-slide">
-      <div class="banner">
-        <img src="./image/banner1.jpg" alt="" />
+    <div class="slideshow-container">
+      <div class="mySlides fade" id="mySlides">
+        <img src="/image/banner1.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade" id="mySlides">
+        <img src="/image/banner2.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade" id="mySlides">
+        <img src="/image/banner3.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/image/banner4.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/image/banner5.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/image/banner6.jpg" style="width: 100%" />
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
       </div>
     </div>
 
     <!-- Main section-->
     <section>
       <div class="main">
-        <h5>Welcome to our resort</h5>
-        <h1>SAii Phi Phi Island Village</h1>
+        <h4 style="color: #8dc7ba">Welcome to our resort</h4>
+        <h1 style="margin-bottom: 20px">SAii Phi Phi Island Village</h1>
         <p>
-          SAii Phi Phi Island Village Welcome to our resort Escape to SAii Phi
-          Phi Island Village, a dream-like tropical resort on a private
-          800-metre stretch of pristine white sandy beach lapped by the
-          turquoise waters of the Andaman Sea. This lavish Phi Phi Island resort
-          is set amid 70 acres of coconut palm plantations, in the privacy of
-          Loh Ba Gao Bay on the peaceful northeast coast of beautiful Phi Phi
-          Island. Accommodations include 189 traditional Thai-style bungalows
-          and 12 exclusive Hillside Pool Villas. Each villa has its own private
-          pool overlooking the island’s magnificent scenery. Resort facilities
-          include five restaurants, three bars, a spa, gift shop, recreation
-          centre, 5-Star PADI dive centre, fitness room, two large swimming
-          pools and tennis courts. At the Marine Discovery Centre, experts
-          educate and inspire guests and locals with sustainability efforts
-          including raising baby sharks and clownfish. Having been off-limits to
-          the public for three and a half years to allow for environmental
-          rejuvenation, Maya Bay in Ko Phi Phi National Park has now officially
-          reopened to tourists and, as one of Thailand’s true national
-          treasures, is a must-visit destination.
+          Escape to SAii Phi Phi Island Village, a dream-like tropical resort on a private 800-metre stretch of pristine white sandy beach lapped by the turquoise waters of the Andaman Sea. This lavish Phi Phi Island resort is set amid 70 acres of coconut palm plantations, in the privacy of Loh Ba Gao Bay on the peaceful northeast coast of beautiful Phi Phi Island.
+        </p> <br>
+        <p>
+          Accommodations include 189 traditional Thai-style bungalows and 12 exclusive Hillside Pool Villas. Each villa has its own private pool overlooking the island’s magnificent scenery.
+        </p> <br>
+        <p>
+          Resort facilities include five restaurants, three bars, a spa, gift shop, recreation centre, 5-Star PADI dive centre, fitness room, two large swimming pools and tennis courts. At the Marine Discovery Centre, experts educate and inspire guests and locals with sustainability efforts including raising baby sharks and clownfish.
+        </p> <br>
+        <p>
+          Having been off-limits to the public for three and a half years to allow for environmental rejuvenation, Maya Bay in Ko Phi Phi National Park has now officially reopened to tourists and, as one of Thailand’s true national treasures, is a must-visit destination.
         </p>
       </div>
     </section>
@@ -133,5 +182,7 @@
     <section>Things To Do</section>
     <section>Work with us</section>
     <div style="height: 2000px"></div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
