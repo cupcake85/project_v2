@@ -1,3 +1,4 @@
+//dots slide
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -45,4 +46,23 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 7000);
+}
+
+//discover more
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML =
+      'More Details <img src="/image/111111.svg" alt="" class="iconof" />';
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML =
+      'Less Details <img src="/image/11112.svg" alt="" class="iconof" />';
+    moreText.style.display = "inline";
+  }
 }

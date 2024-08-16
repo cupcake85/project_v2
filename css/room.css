@@ -33,8 +33,6 @@
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: 0;
-    margin-left: -15px;
   }
 
   .room-box {
