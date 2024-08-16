@@ -87,3 +87,24 @@ function myFunction() {
 //     moreText.slideUp();
 //   }
 // }
+
+//navbar resonsive
+// function myFunction() {
+//   var x = document.getElementById("myTopnav");
+//   if (x.className === "topnav") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "topnav";
+//   }
+// }
+
+$(document).ready(function () {
+  $("#menu-btn").click(function () {
+    var sidenavWidth = $("#mySidenav").width();
+    if (sidenavWidth == 0) {
+      openNav();
+    } else {
+      closeNav();
+    }
+  });
+});
