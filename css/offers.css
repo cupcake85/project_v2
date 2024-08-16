@@ -10,3 +10,81 @@
   font-size: 2.5rem;
   color: #54565a;
 }
+
+.line {
+  display: flex;
+  flex-direction: column;
+  background-color: #54565a;
+  width: 350px;
+  height: 1px;
+  margin: 30px;
+}
+
+.boxlineof {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxsizeof {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 350px;
+  height: 590px;
+}
+.boxlayoutof {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imgof {
+  width: 350px;
+  height: 215px;
+}
+
+.textof {
+  font-size: 24px;
+  margin: 15px;
+  color: #54565a;
+  font-weight: bold;
+}
+
+.textof2 {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: #54565a;
+}
+
+.package-price {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: #54565a;
+}
+.moreof {
+  margin-top: 15px;
+  color: #8dc7ba;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.iconof {
+  color: #8dc7ba;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  margin: 10px;
+}
