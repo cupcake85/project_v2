@@ -1,3 +1,4 @@
+//dots slide
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -61,7 +62,7 @@ function myFunction() {
   } else {
     dots.style.display = "none";
     btnText.innerHTML =
-      'Less Details <img src="/image/111111.svg" alt="" class="iconof" />';
+      'Less Details <img src="/image/11112.svg" alt="" class="iconof" />';
     moreText.style.display = "inline";
   }
 }
