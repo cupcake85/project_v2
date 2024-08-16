@@ -18,10 +18,17 @@
 .boxag-item {
   width: 200px;
   height: 200px;
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
   color: #8dc7ba;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.imgag {
+  height: 90px;
+  width: 90px;
 }
