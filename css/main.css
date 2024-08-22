@@ -4,6 +4,7 @@
 @import "/css/room.css";
 @import "/css/features.css";
 @import "/css/Things.css";
+@import "/css/nav.css";
 
 .main {
   padding-left: 25%;
@@ -15,6 +16,7 @@
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
+
 #more {
   display: none;
   transition: all 0.5s ease-in-out;

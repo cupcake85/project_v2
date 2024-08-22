@@ -108,3 +108,8 @@ $(document).ready(function () {
     }
   });
 });
+
+function myFunction() {
+  const sideNav = document.querySelector(".sideNav");
+  sideNav.style.display = sideNav.style.display === "block" ? "none" : "block";
+}

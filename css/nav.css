@@ -1,0 +1,175 @@
+.sideNav {
+  display: none;
+}
+header {
+  display: flex;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  border-width: 0 0 1px 0;
+  z-index: 10;
+  order: 1;
+  font-family: "Source Sans Pro";
+  background-color: #fff;
+  justify-content: space-around;
+  box-shadow: 0 0 5px #0002;
+}
+
+.logo {
+  margin-left: 45px;
+  height: 110px;
+  min-width: 120px;
+  background: #8dc7ba;
+  position: relative;
+  z-index: 1002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  margin-left: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  padding: 0px 15px;
+  align-items: center;
+  cursor: pointer;
+  font-size: large;
+}
+
+nav li:hover {
+  color: #8dc7ba;
+  transition: all 0.2s ease-in-out;
+}
+
+.tools {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1002;
+  margin-left: auto;
+}
+
+.shop,
+.reserve {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  color: #fff !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  margin-right: 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.shop {
+  width: 200px;
+  background-color: #8dc7ba;
+}
+
+.reserve {
+  background-color: #638981;
+  width: 160px;
+}
+
+.shop:hover {
+  background-color: #77a99e;
+}
+
+.reserve:hover {
+  background-color: #496761;
+}
+
+.responsive-menu {
+  display: none;
+}
+
+.shop-res {
+  display: none;
+}
+
+@media only screen and (max-width: 1170px) {
+  header {
+    position: relative;
+  }
+  nav {
+    transition: all 0.25s ease-in-out;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .shop {
+    display: none;
+  }
+
+  .shop-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8dc7ba;
+    min-width: 100px;
+  }
+
+  .reserve {
+    min-width: 80px;
+    font-size: smaller;
+  }
+
+  .responsive-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+  }
+  .sideNav {
+    display: block;
+  }
+
+  .sideNav ul {
+    width: 100%;
+    background: #fff;
+  }
+  .sideNav li {
+    padding: 12px 32px 12px 17px;
+    text-align: left;
+    border-right: solid 0;
+    background-color: transparent;
+    color: #666;
+    line-height: 25px;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(0, 0, 0, 0.13);
+    position: static;
+  }
+}
