@@ -12,10 +12,29 @@
 
 .boxt-item2 {
   margin: 5px;
-
   background-color: rgb(255, 255, 255);
-  width: 400px;
+  width: 450px;
   height: 200px;
+  display: flex;
+}
+
+.boxt-img {
+  width: 220px;
+  height: 200px;
+}
+
+.boxt-textt {
+  padding: 15px;
+}
+
+.textt-item {
+  color: #8dc7ba;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.textt-item2 {
+  font-size: 16px;
 }
 
 .textt {
