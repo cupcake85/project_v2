@@ -113,3 +113,14 @@ function myFunction() {
   const sideNav = document.querySelector(".sideNav");
   sideNav.style.display = sideNav.style.display === "block" ? "none" : "block";
 }
+
+function toggle(x) {
+  x.classList.toggle("change");
+
+  let myMenu = document.getElementById("myMenu");
+  if (myMenu.className === "sideNav") {
+    myMenu.className += "menu-active";
+  } else {
+    myMenu.className = "sideNav";
+  }
+}
