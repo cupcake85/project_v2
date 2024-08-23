@@ -9,38 +9,10 @@
   box-sizing: border-box;
 }
 
-/* body {
-  font-family: "Source Sans Pro";
-  font-weight: 300;
-  line-height: 1.4;
-  overflow-x: auto;
-  color: #000;
-  height: 100%;
-  background: #fff;
-  width: 100%;
-  min-width: 1170px;
-  overflow-x: hidden;
-} */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Source Sans Pro";
-  font-weight: 300;
-  line-height: 1.4;
-  overflow-x: auto;
-  color: #000;
-  height: 100%;
-  background: #fff;
   width: 100%;
-  min-width: 1170px;
-  overflow-x: hidden;
-} */
+}
 
 section {
   padding: 80px 0px;

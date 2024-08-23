@@ -67,37 +67,6 @@ function myFunction() {
   }
 }
 
-//jQuery
-// function myFunction() {
-//   var dots = $("#dots");
-//   var moreText = $("#more");
-//   var btnText = $("#myBtn");
-
-//   if (dots.is(":visible")) {
-//     dots.hide();
-//     btnText.html(
-//       'Less Details <img src="/image/11112.svg" alt="" class="iconof" />'
-//     );
-//     moreText.slideDown();
-//   } else {
-//     dots.show();
-//     btnText.html(
-//       'More Details <img src="/image/111111.svg" alt="" class="iconof" />'
-//     );
-//     moreText.slideUp();
-//   }
-// }
-
-//navbar resonsive
-// function myFunction() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }
-
 $(document).ready(function () {
   $("#menu-btn").click(function () {
     var sidenavWidth = $("#mySidenav").width();
