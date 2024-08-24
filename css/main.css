@@ -18,6 +18,10 @@
   background-position: 100% 0;
 }
 
+.main p {
+  transition: all 0.5s ease-in-out;
+}
+
 #more {
   display: none;
   transition: all 0.5s ease-in-out;

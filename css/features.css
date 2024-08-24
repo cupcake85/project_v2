@@ -1,14 +1,44 @@
 .box-layout-feature {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* หรือกำหนดความกว้างที่เหมาะสม */
 }
 
-@media only screen and (min-width: 1025px) {
-  .box-layout-feature {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+.feature-box-group {
+  justify-content: center;
+  display: flex;
+  flex-shrink: 0;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.feature-box {
+  background-color: white;
+  margin: 10px;
+  width: 350px; /* ปรับขนาดตามความต้องการ */
+}
+
+/* Styling for the left and right buttons */
+.w3-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Positioning the left button */
+.w3-display-left {
+  left: 200px;
+}
+
+/* Positioning the right button */
+.w3-display-right {
+  right: 200px;
 }

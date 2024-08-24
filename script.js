@@ -1,3 +1,15 @@
+//responsive menu
+function toggle(x) {
+  x.classList.toggle("change");
+
+  let myMenu = document.getElementById("myMenu");
+  if (myMenu.className === "sideNav") {
+    myMenu.className += "menu-active";
+  } else {
+    myMenu.className = "sideNav";
+  }
+}
+
 //dots slide
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -49,7 +61,7 @@ function showSlides() {
 }
 
 // discover more
-function myFunction() {
+function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
@@ -67,29 +79,26 @@ function myFunction() {
   }
 }
 
-$(document).ready(function () {
-  $("#menu-btn").click(function () {
-    var sidenavWidth = $("#mySidenav").width();
-    if (sidenavWidth == 0) {
-      openNav();
-    } else {
-      closeNav();
-    }
-  });
-});
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function myFunction() {
-  const sideNav = document.querySelector(".sideNav");
-  sideNav.style.display = sideNav.style.display === "block" ? "none" : "block";
+function plusDivs(n) {
+  showDivs((slideIndex += n));
 }
 
-function toggle(x) {
-  x.classList.toggle("change");
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("feature-box-group");
+  var totalSlides = x.length;
 
-  let myMenu = document.getElementById("myMenu");
-  if (myMenu.className === "sideNav") {
-    myMenu.className += "menu-active";
-  } else {
-    myMenu.className = "sideNav";
+  if (n > totalSlides) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = totalSlides;
+  }
+
+  for (i = 0; i < totalSlides; i++) {
+    x[i].style.transform = `translateX(${-(slideIndex - 1) * 100}%)`;
   }
 }
