@@ -3,6 +3,7 @@ function toggle(x) {
   x.classList.toggle("change");
 
   let myMenu = document.getElementById("myMenu");
+  ``;
   if (myMenu.className === "sideNav") {
     myMenu.className += "menu-active";
   } else {
@@ -101,4 +102,27 @@ function showDivs(n) {
   for (i = 0; i < totalSlides; i++) {
     x[i].style.transform = `translateX(${-(slideIndex - 1) * 100}%)`;
   }
+}
+
+//room slide
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs((slideIndex += n));
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("room-container");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
 }
