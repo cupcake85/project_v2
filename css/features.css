@@ -1,44 +1,82 @@
-.box-layout-feature {
+.feature-line {
   display: flex;
-
-  overflow: hidden;
-  position: relative;
-  width: 100%; /* หรือกำหนดความกว้างที่เหมาะสม */
+  flex-direction: column;
+  background-color: #54565a;
+  width: 350px;
+  height: 1px;
+  margin: 30px;
 }
 
-.feature-box-group {
-  justify-content: center;
+.feature-head {
   display: flex;
-  flex-shrink: 0;
-  transition: transform 0.5s ease-in-out;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card-list,
+.feature-card-item {
+  user-select: none;
+  display: block;
+  background: #fff;
+}
+
+.feature-card-image {
   width: 100%;
+}
+
+.feature-detail,
+.feature-title {
+  padding: 18px 0px 0px 18px;
+}
+
+/* .swiper {
+  width: 400px;
+} */
+
+/*
+.box-layout-feature {
+  display: flex;
+  justify-content: center;
 }
 
 .feature-box {
   background-color: white;
   margin: 10px;
-  width: 350px; /* ปรับขนาดตามความต้องการ */
+  width: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Styling for the left and right buttons */
-.w3-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  color: white;
+.feature-prev,
+.feature-next {
+  display: flex;
   border: none;
-  padding: 10px;
-  cursor: pointer;
   z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -300px;
+  margin-left: 10px;
+  color: white;
+  background-color: #8dc7ba;
+  color: black;
 }
 
-/* Positioning the left button */
-.w3-display-left {
-  left: 200px;
+.feature-next {
+  right: 0;
+  margin-right: 10px;
 }
 
-/* Positioning the right button */
-.w3-display-right {
-  right: 200px;
-}
+@media only screen and (max-width: 1170px) {
+} */

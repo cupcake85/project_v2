@@ -103,6 +103,7 @@ nav {
 
 .sideNav {
   display: none;
+  overflow-x: hidden !important;
 }
 
 @media only screen and (max-width: 1420px) {
@@ -207,12 +208,20 @@ nav {
 
   #myMenu {
     border-top: rgba(0, 0, 0, 0.13) solid 1px;
-    height: 100vh;
-    overflow: hidden;
+    background: #ffffff;
+    overflow-x: hidden !important;
+    padding: 10px 0 0 0;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    animation: opensidebar 0.5s;
   }
 
   #myMenu li {
     padding: 10px 30px 10px 15px;
+    overflow-x: hidden !important;
     text-align: left;
     border-right: solid 0;
     background-color: transparent;
@@ -221,5 +230,23 @@ nav {
     border-bottom: 1px solid;
     border-bottom-color: rgba(0, 0, 0, 0.13);
     position: static;
+  }
+}
+
+@keyframes opensidebar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes closesidebar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }

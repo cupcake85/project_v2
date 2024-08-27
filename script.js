@@ -3,7 +3,7 @@ function toggle(x) {
   x.classList.toggle("change");
 
   let myMenu = document.getElementById("myMenu");
-  ``;
+
   if (myMenu.className === "sideNav") {
     myMenu.className += "menu-active";
   } else {
@@ -80,29 +80,30 @@ function readMore() {
   }
 }
 
-var slideIndex = 1;
-showDivs(slideIndex);
+//Feature slide
+// var slideIndex = 1;
+// showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
+// function plusDivs(n) {
+//   showDivs((slideIndex += n));
+// }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("feature-box-group");
-  var totalSlides = x.length;
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("feature-box-group");
+//   var totalSlides = x.length;
 
-  if (n > totalSlides) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = totalSlides;
-  }
+//   if (n > totalSlides) {
+//     slideIndex = 1;
+//   }
+//   if (n < 1) {
+//     slideIndex = totalSlides;
+//   }
 
-  for (i = 0; i < totalSlides; i++) {
-    x[i].style.transform = `translateX(${-(slideIndex - 1) * 100}%)`;
-  }
-}
+//   for (i = 0; i < totalSlides; i++) {
+//     x[i].style.transform = `translateX(${-(slideIndex - 1) * 100}%)`;
+//   }
+// }
 
 //room slide
 var slideIndex = 1;
@@ -126,3 +127,19 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = "block";
 }
+
+//Feature slide
+const swiper = new Swiper(".feature-card-wrapper", {
+  loop: true,
+
+  // pagination bullets
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
