@@ -41,14 +41,6 @@ h2 {
 }
 
 @media only screen and (max-width: 1170px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
   .main {
     padding-left: 5%;
     padding-right: 5%;
@@ -56,5 +48,14 @@ h2 {
 
   section {
     padding: 40px 0px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 }
