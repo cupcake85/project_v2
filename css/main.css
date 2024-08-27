@@ -42,10 +42,19 @@ h2 {
 
 @media only screen and (max-width: 1170px) {
   h1 {
-    font-size: smaller;
+    font-size: 20px;
   }
 
   h2 {
-    font-size: smaller;
+    font-size: 1.5rem;
+  }
+
+  .main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  section {
+    padding: 40px 0px;
   }
 }

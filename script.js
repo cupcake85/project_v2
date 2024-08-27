@@ -131,6 +131,7 @@ function showDivs(n) {
 //Feature slide
 const swiper = new Swiper(".feature-card-wrapper", {
   loop: true,
+  spaceBtween: 30,
 
   // pagination bullets
   pagination: {
@@ -141,5 +142,18 @@ const swiper = new Swiper(".feature-card-wrapper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  //Responsive
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
   },
 });
