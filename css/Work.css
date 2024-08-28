@@ -1,21 +1,20 @@
 .boxw-container1 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .boxw-container2 {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
 .linew {
   background-color: #ffffff;
-  width: 1370px;
-  height: 2px;
+  width: 300px;
+  height: 1px;
   margin: 50px;
 }
 
@@ -53,4 +52,73 @@
 .imgw {
   width: 200px;
   height: 200px;
+}
+
+@media only screen and (max-width: 450px) {
+  .boxw-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .imgw {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .boxw-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .boxw-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .imgw {
+    width: 100px;
+    height: 100px;
+  }
+
+  .linew {
+    background-color: #ffffff;
+    width: 500px;
+    height: 2px;
+    margin: 50px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .boxw-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+  }
+
+  .boxw-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .imgw {
+    width: 200px;
+    height: 200px;
+  }
+  .linew {
+    background-color: #ffffff;
+    width: 1370px;
+    height: 2px;
+    margin: 50px;
+  }
 }
