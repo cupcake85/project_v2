@@ -15,22 +15,19 @@
 }
 
 .feature-card-wrapper {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
-  margin: 0 60px 35px;
-  padding: 20px 10px;
+  max-width: 1000px;
+  padding: 20px 10px !important;
   overflow: hidden;
   z-index: 0;
 }
 
-.feature-card-list,
 .feature-card-item {
-  user-select: none;
   display: block;
   background: #fff;
-  padding: 18px;
+  user-select: none;
 }
 
 .feature-card-list,
@@ -45,7 +42,14 @@
 
 .feature-detail,
 .feature-title {
-  padding: 18px 0px 0px 18px;
+  padding: 10px 18px 0px 18px;
+  color: #54565a;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Title";
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -58,5 +62,9 @@
 @media only screen and (max-width: 991.98px) {
   .feature-line {
     display: none;
+  }
+
+  .feature-card-wrapper {
+    max-width: 400px;
   }
 }
