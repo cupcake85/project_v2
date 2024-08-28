@@ -84,6 +84,7 @@ function readMore() {
 const swiper = new Swiper(".feature-card-wrapper", {
   loop: true,
   spaceBetween: 15,
+  injectStyles: [`.swiper-button-next, {font-size: 10px !important}`],
 
   // pagination bullets
   pagination: {

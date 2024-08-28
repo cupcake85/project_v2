@@ -5,6 +5,7 @@
   width: 100%;
   transition: all 0.2s ease-in-out;
   margin: 0 auto;
+  z-index: 0;
 }
 
 .room-left {
@@ -29,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 0;
 }
 
 .learn-more-btn {
