@@ -1,18 +1,35 @@
-.room-container {
+.room-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  margin: 0 auto;
 }
 
-.room-box {
+.room-left {
+  width: 80%;
+  min-height: 600px;
+  z-index: 0;
+}
+
+.room-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.room-right {
+  width: 30%;
+  min-height: 350px;
+  background: url("https://www.thavornbeachvillage.com/html/images/bg-front-accom.png");
+  padding: 30px;
+  margin-left: -100px;
+  background-color: #f9f9fa;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 45px 35px;
-  transition: all 0.2s ease-in-out;
+  justify-content: center;
+  z-index: 1;
 }
 
 .learn-more-btn {
@@ -24,65 +41,61 @@
   font-size: 12px;
   color: white;
   cursor: pointer;
+  border: none;
 }
 
 .learn-more-btn:hover {
   background-color: #9adacc;
 }
 
-.room-slide {
-  overflow: hidden;
+.room-btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin-top: -20px;
+  z-index: 1;
   position: relative;
-  background-size: calc(100vh - 1);
-}
-
-.room-slide img {
-  width: 100%;
-  height: 100%;
 }
 
 .room-btn {
-  display: none;
+  display: block;
+  padding: 10px;
+  background-color: #8dc7ba;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (min-width: 1025px) {
-  .room-container {
-    display: flex;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+@media only screen and (max-width: 1025px) {
+  .room-wrapper {
+    flex-direction: column;
   }
 
-  .room-box {
-    padding: 60px 45px;
-    flex: 0 0 400px;
-    max-width: 400px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background: #f9f9fa;
-    background-image: url("https://www.thavornbeachvillage.com/html/images/bg-front-accom.png");
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: 100px 40px;
-  }
-  .room-slide img {
-    height: 75vh;
-    min-height: 680px;
+  .room-left {
     width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    height: auto;
+    min-height: inherit;
   }
-}
 
-@media only screen and (max-width: 1170px) {
+  .room-right {
+    width: 100%;
+    margin: 0;
+    background: #f9f9fa;
+    z-index: 0;
+    padding: 30px 40px 40px 40px;
+    min-height: 250px;
+  }
+
   .room-btn-group {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    margin-top: -20px;
+    z-index: 1;
+    position: relative;
   }
 
   .room-btn {
@@ -94,13 +107,13 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
+}
 
-  .room-slide,
-  .room-box {
-    transition: all 0.5s ease-in-out;
-    animation-name: fade;
-    animation-duration: 1s;
-  }
+.room-left,
+.room-rigt {
+  transition: all 0.5s ease-in-out;
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
 @keyframes fade {

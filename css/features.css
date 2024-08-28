@@ -18,6 +18,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .feature-card-list,
@@ -25,58 +30,33 @@
   user-select: none;
   display: block;
   background: #fff;
+  padding: 18px;
 }
 
+.feature-card-list,
 .feature-card-image {
   width: 100%;
+}
+
+.feature-card-list,
+.feature-card-item:hover {
+  cursor: grabbing;
 }
 
 .feature-detail,
 .feature-title {
   padding: 18px 0px 0px 18px;
 }
-
-/* .swiper {
-  width: 400px;
-} */
-
-/*
-.box-layout-feature {
-  display: flex;
-  justify-content: center;
-}
-
-.feature-box {
-  background-color: white;
-  margin: 10px;
-  width: 350px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.feature-prev,
-.feature-next {
-  display: flex;
-  border: none;
-  z-index: 1;
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  padding: 16px;
-  margin-top: -300px;
-  margin-left: 10px;
-  color: white;
+.swiper-button-prev,
+.swiper-button-next {
   background-color: #8dc7ba;
-  color: black;
 }
 
-.feature-next {
-  right: 0;
-  margin-right: 10px;
+.swiper {
+  z-index: 0 !important;
 }
-
-@media only screen and (max-width: 1170px) {
-} */
+@media only screen and (max-width: 991.98px) {
+  .feature-line {
+    display: none;
+  }
+}
