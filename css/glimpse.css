@@ -11,6 +11,7 @@
 
 .boxag-layout {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -32,4 +33,58 @@
   height: 90px;
   width: 90px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+  .boxag-layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .boxag {
+    margin: 20px;
+    height: 350px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #54565a;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .boxag {
+    margin: 20px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #54565a;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .boxag-layout {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .boxag {
+    margin: 20px;
+    height: 350px;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #54565a;
+  }
 }

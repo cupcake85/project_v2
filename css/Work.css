@@ -13,7 +13,7 @@
 
 .linew {
   background-color: #ffffff;
-  width: 300px;
+  width: auto;
   height: 1px;
   margin: 50px;
 }
@@ -86,13 +86,6 @@
     width: 100px;
     height: 100px;
   }
-
-  .linew {
-    background-color: #ffffff;
-    width: 500px;
-    height: 2px;
-    margin: 50px;
-  }
 }
 
 @media only screen and (min-width: 961px) {
@@ -117,7 +110,7 @@
   }
   .linew {
     background-color: #ffffff;
-    width: 1370px;
+    width: auto;
     height: 2px;
     margin: 50px;
   }
