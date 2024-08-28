@@ -31,6 +31,7 @@ h1 {
   display: flex;
   justify-content: center;
   color: #8dc7ba;
+  font-family: "Title";
 }
 
 h2 {
@@ -38,12 +39,14 @@ h2 {
   justify-content: center;
   font-size: 2.5rem;
   color: #54565a;
+  font-family: "Title";
 }
 
 @media only screen and (max-width: 1170px) {
   .main {
     padding-left: 5%;
     padding-right: 5%;
+    background-size: 30%;
   }
 
   section {

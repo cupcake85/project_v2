@@ -1,17 +1,32 @@
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("/source-sans-pro_5.0.8/ttf/source-sans-pro-greek-400-normal.ttf");
+  font-family: "Regular";
+  src: url("/source-sans-pro/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Light";
+  src: url("/source-sans-pro/SourceSansPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "Title";
+  src: url("/source-sans-pro_5.0.8/ttf/source-sans-pro-cyrillic-400-normal.ttf");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Source Sans Pro";
+  font-family: "Regular";
   width: 100%;
+}
+
+p {
+  font-family: "Light";
 }
 
 section {
