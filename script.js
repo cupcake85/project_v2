@@ -136,15 +136,15 @@ function showDivs(n) {
 
 //review side
 var slideIndex = 1;
-showDivs(slideIndex);
+showReview(slideIndex);
 
-function plusDivs(n) {
-  showDivs((slideIndex += n));
+function reviewNext(n) {
+  showReview((slideIndex += n));
 }
 
-function showDivs(n) {
+function showReview(n) {
   var i;
-  var x = document.getElementsByClassName("room-wrapper");
+  var x = document.getElementsByClassName("review-box");
   if (n > x.length) {
     slideIndex = 1;
   }
