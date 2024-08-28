@@ -21,10 +21,10 @@
 
 .room-right {
   width: 30%;
+  margin-left: -100px;
   min-height: 350px;
   background: url("https://www.thavornbeachvillage.com/html/images/bg-front-accom.png");
   padding: 30px;
-  margin-left: -100px;
   background-color: #f9f9fa;
   display: flex;
   flex-direction: column;
