@@ -156,3 +156,32 @@ function showReview(n) {
   }
   x[slideIndex - 1].style.display = "flex";
 }
+
+//Glimpse slide
+const glimpseSwiper = new Swiper(".boxag", {
+  loop: true,
+  spaceBetween: 15,
+  injectStyles: [`.swiper-button-next, {font-size: 10px !important}`],
+
+  // pagination bullets
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  //Responsive
+  0: {
+    slidesPerView: 1,
+  },
+  768: {
+    slidesPerView: 2,
+  },
+  1024: {
+    slidesPerView: 4, // เพิ่มเป็น 4 slides
+  },
+});
