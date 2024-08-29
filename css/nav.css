@@ -13,6 +13,7 @@ nav {
   width: 100vw;
   position: fixed;
   box-shadow: 0 0 5px #0002;
+  transform-style: preserve-3d;
 }
 
 .logo {
