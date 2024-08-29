@@ -81,57 +81,10 @@ function readMore() {
 }
 
 //Feature slide
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("feature-box-group");
-  var totalSlides = x.length;
-
-  if (n > totalSlides) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = totalSlides;
-  }
-
-  for (i = 0; i < totalSlides; i++) {
-    x[i].style.transform = `translateX(${-(slideIndex - 1) * 100}%)`;
-  }
-}
-
-//room slide
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("room-wrapper");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex - 1].style.display = "flex";
-}
-
-//Feature slide
 const swiper = new Swiper(".feature-card-wrapper", {
   loop: true,
-  spaceBtween: 30,
+  spaceBetween: 15,
+  injectStyles: [`.swiper-button-next, {font-size: 10px !important}`],
 
   // pagination bullets
   pagination: {
@@ -157,3 +110,49 @@ const swiper = new Swiper(".feature-card-wrapper", {
     },
   },
 });
+
+//room slide
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs((slideIndex += n));
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("room-wrapper");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "flex";
+}
+
+//review side
+var slideIndex = 1;
+showReview(slideIndex);
+
+function reviewNext(n) {
+  showReview((slideIndex += n));
+}
+
+function showReview(n) {
+  var i;
+  var x = document.getElementsByClassName("review-box");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "flex";
+}

@@ -10,8 +10,9 @@ nav {
   height: 80px;
   background-color: #ffffff;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   position: fixed;
+  box-shadow: 0 0 5px #0002;
 }
 
 .logo {
