@@ -33,34 +33,58 @@
         </div>
         <ul class="menu">
           <li style="color: #8dc7ba; font-weight: bold">Home</li>
-          <li>
+          <li class="dropdown">
             Offers
             <i
               class="bi bi-caret-down-fill"
               style="font-size: 8px; color: #bfbfbf"
             ></i>
+            <div class="room-dropdown">
+              <a href="#">Book Early & Save</a>
+              <a href="#">Stay Longer & Save</a>
+              <a href="#">A Sharktastic Escape</a>
+              <a href="#">A Day Of Diving</a>
+              <a href="#">Romance in Paradise</a>
+              <a href="#">Marine Discovery</a>
+            </div>
           </li>
-          <li>
+          <li class="dropdown">
             Sleep
             <i
               class="bi bi-caret-down-fill"
               style="font-size: 8px; color: #bfbfbf"
             ></i>
+            <div class="room-dropdown">
+              <a href="#">Bungalows</a>
+              <a href="#">Beachfront Junior Suite</a>
+              <a href="#">Oceanview Hillside Pool Villa</a>
+            </div>
           </li>
           <li>Gallery</li>
-          <li>
+          <li class="dropdown">
             Treats
             <i
               class="bi bi-caret-down-fill"
               style="font-size: 8px; color: #bfbfbf"
             ></i>
+            <div class="room-dropdown">
+              <a href="#">Play</a>
+              <a href="#">Treats</a>
+              <a href="#">Spa</a>
+              <a href="#">Wedding</a>
+              <a href="#">Sustainability</a>
+            </div>
           </li>
-          <li>
+          <li class="dropdown">
             Things to do
             <i
               class="bi bi-caret-down-fill"
               style="font-size: 8px; color: #bfbfbf"
             ></i>
+            <div class="room-dropdown">
+              <a href="#">Lèn Forest Spa</a>
+              <a href="#">Driving Center</a>
+            </div>
           </li>
           <li>Events</li>
           <li>Sustainability</li>
@@ -292,21 +316,6 @@
               <img src="/image/2222222.svg" alt="" class="iconof" />
             </p>
           </li>
-          <li class="feature-card-item swiper-slide">
-            <img src="./image/feature6.jpg" alt="" class="feature-card-image" />
-            <p class="feature-title">Play</p>
-            <p class="feature-detail">
-              The most obvious wonders in life are sometimes hidden right there
-              waiting for you to enjoy. Surround yourself in sights, sounds,
-              tastes, and adventure. There’s plenty to see and do.
-            </p>
-            <p class="package-price">starting rate from THB 3,000++ / night</p>
-            <p class="moreof">
-              Discover more
-
-              <img src="/image/2222222.svg" alt="" class="iconof" />
-            </p>
-          </li>
         </ul>
 
         <div class="feature-btn-group">
@@ -379,11 +388,10 @@
             <button class="learn-more-btn">LEARN MORE</button>
           </div>
         </div>
-      </div>
-
-      <div class="room-btn-group">
-        <a class="room-btn" onclick="plusDivs(-1)">&#10094;</a>
-        <a class="room-btn" onclick="plusDivs(1)">&#10095;</a>
+        <div class="room-btn-group">
+          <a class="room-btn" onclick="plusDivs(-1)">&#10094;</a>
+          <a class="room-btn" onclick="plusDivs(1)">&#10095;</a>
+        </div>
       </div>
     </section>
 
@@ -539,8 +547,8 @@
     <!-- -------------------------------------------At a glimpse--------------------------------------------------------- -->
     <section>
       <div>
-        <h1 class="h1">Best Price Guarantee and More</h1>
-        <h2 class="h2" style="margin-bottom: 10px">At a glimpse</h2>
+        <h1>Best Price Guarantee and More</h1>
+        <h2 style="margin-bottom: 10px">At a glimpse</h2>
       </div>
 
       <div class="boxag-layout">
@@ -581,8 +589,8 @@
               <img src="/image/google.png" alt="" class="imgrv2" />
             </div>
             <p>
-              the surroundings with blue, clear water was amazing. Also, the
-              resort is quite and was a perfect place for relaxing.
+              "The surroundings with blue, clear water was amazing. Also, the
+              resort is quite and was a perfect place for relaxing."
             </p>
           </div>
 
@@ -601,21 +609,20 @@
               <img src="/image/booking.png" alt="" class="imgrv2" />
             </div>
             <p>
-              The location is awesome and the property was totally worth the
+              "The location is awesome and the property was totally worth the
               amount we spent. The most awesome part was the service provided by
-              Ms. Kim.
+              Ms. Kim."
             </p>
+          </div>
+          <div class="review-btn-group">
+            <a class="review-btn" onclick="reviewNext(-1)">&#10094;</a>
+            <a class="review-btn" onclick="reviewNext(1)">&#10095;</a>
           </div>
 
           <div class="review-img">
             <img src="/image/240319-Saii-PhiPhi-Facilities-0028-1.jpg" alt="" />
           </div>
         </div>
-      </div>
-
-      <div class="review-btn-group">
-        <a class="review-btn" onclick="reviewNext(-1)">&#10094;</a>
-        <a class="review-btn" onclick="reviewNext(1)">&#10095;</a>
       </div>
     </section>
 
